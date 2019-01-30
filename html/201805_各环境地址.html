@@ -1,0 +1,633 @@
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="always" name="referrer">
+    <meta name="theme-color" content="#2932e1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="search" type="application/opensearchdescription+xml" href="/content-search.xml" title="百度搜索"/>
+    <link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg">
+
+
+    <title>数字权益</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+
+	td.dev:before{
+	content:"de:";
+	}
+	td.dev,td.uat{
+	display:none}
+	td.prod:before{
+	content:"p:";
+	}	
+	td.test:before{
+	content:"t:";
+	}	
+	td.test2:before{
+	content:"t2:";
+	}	
+	td.ios:before{
+	content:"i:";
+	}	
+	td.uat:before{
+	content:"u:";
+	}	
+	td.stage:before{
+	content:"st:";
+	}
+	</style>
+</head>
+<body>
+
+<table class="table">
+    <caption>各环境访问地址</caption>
+    <thead style="">
+    </thead>
+    <tbody>
+	 <tr class="">
+        <td>jenkins</td>
+        <td><a href="http://10.199.192.15/" target="_blank">
+		jenkins
+		</a></td>
+        <td>szqy/12345678</td>
+       
+    </tr>		 
+	<tr class="">
+        <td>vpn</td>
+        <td><a href="http://confluence.wanda-itg.local/pages/viewpage.action?pageId=16320998" target="_blank">
+		vpn
+		</a></td>
+        <td></td>
+       
+    </tr>		
+	<tr class="">
+        <td>会议室</td>
+        <td><a href="http://meeting.wanda-itg.local/#/main" target="_blank">
+		metting
+		</a></td>
+        <td></td>
+       
+    </tr>	 
+	<tr class="">
+        <td>gitlab</td>
+        <td><a href="http://10.199.192.11/groups/blockchain" target="_blank">
+		gitlab
+		</a></td>
+    </tr>	
+	<tr class="">
+        <td>zentao</td>
+        <td><a href="http://118.25.126.66:8088/zentao/my/" target="_blank">
+		zentao
+		</a></td>
+    </tr>	
+	<tr class="">
+        <td>在线作图</td>
+        <td><a href="https://processon.com/myteams/5af8f66fe4b0ee8894b29a13" target="_blank">
+		万益通
+		</a></td>
+    </tr>
+	<tr class="">
+        <td>kafka命令</td>
+        <td colspan=3>bin/kafka-console-consumer.sh --from-beginning   --zookeeper 10.213.129.58:2181 --topic dams.exchange.pushIOSMessage</td>
+    </tr>	
+	<tr class="">
+        <td>考勤OA</td>
+        <td><a href="http://wkkq.wanda.cn/ords/f?p=106:69:13869459044163:::::" target="_blank">
+		oa
+		</a></td>
+    </tr>	
+	<tr class="">
+        <td>apidoc</td>
+        <td><a href="http://szqy.ffan.com/fftech/docs/#!/v1%" target="_blank">
+		swagger
+		</a></td>
+    </tr>	
+	<tr class="">
+        <td>cat</td>
+        <td><a href="http://10.214.129.203:8082/cat/r/t?op=history&domain=exchange&date=20171129&ip=All&reportType=day&type=URL&startDate=20171129&endDate=20171130" target="_blank">
+		cat
+		</a></td>
+		<td><a href="http://10.214.129.203:8082/cat/r/p?op=history&domain=exchange&ip=All" target="_blank">
+		超过一秒
+		</a></td>
+    </tr>
+    <tr class="success">
+        <td>apiaccount</td>
+        <td class="prod">10.214.96.59/64:4140<br/>10.214.96.201:4140</td>
+        <td class="dev">10.199.212.123:3030</td>
+        <td class="test"><a href="http://10.213.129.59/apiaccount/swagger-ui.html" target="_blank">
+		10.213.129.59/60:3030
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/apiaccount/swagger-ui.html" target="_blank">
+		10.213.128.102:3030
+		</a></td>
+        <td class="uat">uat</td>
+        <td>10.214.160.245:4040</td>
+        <td>10.214.96.64:5250</td>
+    </tr>
+    <tr class="active">
+        <td>apiserver</td>
+	    <td class="prod">10.214.96.59/64:6060<br/>10.214.201/202:6060</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.59/apiserver/swagger-ui.html" target="_blank">
+		10.213.129.61:6060
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/apiserver/swagger-ui.html" target="_blank">
+		10.213.128.101:6060
+		</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.181:4040</td>
+        <td class="ios">ios</td>
+    </tr> 
+	<tr class="active">
+        <td>openapi</td>
+	    <td class="prod">10.214.96.59/64:7170</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.59/openapi/swagger-ui.html" target="_blank">
+		10.213.129.59:6060
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/openapi/swagger-ui.html" target="_blank">
+		10.213.128.101:6060
+		</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">stage</td>
+        <td class="ios">ios</td>
+    </tr>
+  
+	<tr class="success">
+        <td>wytadmin</td>
+		<td>prod</td>
+        <td class="dev">dev</td>
+		<td class="test"><a href="http://10.213.129.59/wytadmin/" target="_blank">
+		10.213.129.59:80<a/></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/wytadmin" target="_blank">
+		10.213.128.100:8000
+		</a></td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+
+    </tr>
+    <tr class="success">
+        <td>drManager</td>
+		<td class="prod">10.214.96.64:8080</td>
+		<td class="dev">10.213.129.61:7070</td>
+        <td class="test"><a href="http://10.213.129.59/drManager/sysLogin.jsp" target="_blank">
+		10.199.212.122:3030
+		</a></td>        
+		<td class="test2"><a href="http://10.213.128.100:8000/drManager/sysLogin.jsp" target="_blank">
+		10.213.128.100:8000
+		</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">stage</td>
+        <td class="ios">ios</td>
+
+    </tr>    
+	
+	<tr class="success">
+        <td>disaccount</td>
+		<td class="prod"></td>
+		<td class="dev"></td>
+        <td class="test"><a href="http://10.213.129.57:10098/swagger-ui.html" target="_blank">
+		10.213.129.57:10098
+		</a></td>        
+		<td class="test2">
+		</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">stage</td>
+        <td class="ios">ios</td>
+
+    </tr>
+
+    <tr class="active">
+        <td>dradmin</td>
+		<td class="prod">10.214.96.59:4040</td>
+        <td class="dev">10.199.212.122:6060</td>
+        <td class="test"><a href="http://10.213.129.59/dradmin/swagger-ui.html" target="_blank">10.213.129.61:4040<a/></td>
+        <td class="test2"><a href="http://szqy.ffan.com/test2/test2/web/res/backEnd_debug.html?proj=wytmanage" target="_blank">10.213.128.101:3130</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.181:8080</td>
+        <td class="ios">ios</td>
+
+    </tr>
+
+    <tr class="warning">
+        <td>drmall</td>
+		<td class="prod">10.214.96.59/64:2120<br/>
+           10.214.96.201:2120</td>
+        <td class="dev">10.199.212.122:8080</td>
+        <td class="test"><a href="http://10.213.129.59/drmall/swagger-ui.html" target="_blank">10.213.129.61:10096<a/></td>
+        <td class="test2"><a href="http://10.213.128.103:10096/swagger-ui.html" target="_blank">10.213.128.103:10096</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.245:2020</td>
+        <td class="ios">10.214.129.206:8080</td>
+    </tr>
+    <tr class="danger">
+        <td>drcard</td>
+		<td class="prod">10.214.96.59/64:3130<br/>10.214.96.201:3130(冷备)</td>
+        <td class="dev">10.199.212.122:9090</td>
+        <td class="test"><a href="http://10.213.129.59/drcard/swagger-ui.html" target="_blank">10.213.129.61:9090</a></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/drcard/swagger-ui.html" target="_blank">10.213.128.101:3130</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.245:3030</td>
+        <td class="ios">10.214.129.206:9090</td>
+
+    </tr>
+    <tr class="success">
+        <td>drpay</td>
+		<td class="prod">10.214.96.59:3030</td>
+        <td class="dev">10.199.212.122:9090</td>
+        <td class="test"><a href="http://10.213.129.59/drpay/swagger-ui.html" target="_blank">10.213.129.61:9090<a/></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/drpay/swagger-ui.html" target="_blank">10.213.128.101:3130</a></td>
+        <td class="uat">uat</td>
+		<td class="stage">10.214.160.245:3030</td>
+
+        <td>ios</td>
+
+    </tr>
+
+    <tr class="active">
+        <td>dr2mall</td>
+		<td class="prod">10.214.96.59/64:5150</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.59/dr2mall/swagger-ui.html" target="_blank">10.213.129.61:2120</a></td>
+		<td class="test2"><a href="http://10.213.128.100:8000/dr2mall/swagger-ui.html" target="_blank">10.213.128.101:3130</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.245:5050</td>
+        <td>ios</td>
+
+    </tr>
+    <tr class="warning">
+        <td>drsettle</td>
+		<td class="prod">10.214.96.59/64:6160</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.59/drsettle/swagger-ui.html" target="_blank">10.213.129.61:2120</a></td>
+        <td class="test2"><a href="http://10.213.128.100:8000/drsettle/swagger-ui.html" target="_blank">10.213.128.101:3130</a></td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.181:2120</td>
+        <td>ios</td>
+
+    </tr>
+    <tr class="danger">
+        <td>frontOffice</td>
+		<td class="prod">10.214.96.59/64:2020<br/>10.214.96.201/202:2020</td>
+        <td class="dev">10.199.212.122:2020</td>
+        <td class="test">10.213.129.59:8089</td>
+        <td class="test2">10.213.128.102:8089</td>
+        <td class="uat">uat</td>
+        <td class="stage">10.214.160.181:2020</td>
+        <td class="ios">10.214.96.206:2020</td>
+
+    </tr>
+
+   
+  
+    <tr class="warning">
+        <td>dms</td>
+		<td class="prod">10.214.129.197/198:10089<br/>10.214.129.110/111:10089</td>
+        <td class="dev">dev</td>
+        <td>test</td>
+        <td>test2</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+
+    </tr>
+
+   
+    <tr class="success">
+        <td>member</td>
+		<td class="prod">10.214.96.59/64/201:10093<br/>
+10.214.96.202/203/204:10093</td>
+        <td class="dev"></td>
+        <td class="test"><a href="http://10.213.129.57:10093/swagger-ui.html" target="_blank">
+		10.213.129.57:10093
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.102:10093/swagger-ui.html" target="_blank">
+		10.213.128.102:10093
+		</a></td>
+        <td class="uat">10.213.130.89:10093<br/>10.213.130.88:10093</td>
+        <td class="stage">stage</td>
+        <td class="ios">ios</td>
+
+    </tr>
+
+    <tr class="success">
+        <td>redeem</td>
+		<td class="prod">prod</td>
+        <td class="dev"></td>
+        <td class="test"><a href="http://10.213.129.57:10095/swagger-ui.html" target="_blank">
+		10.213.129.57:10095
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.103:10095/swagger-ui.html" target="_blank">
+		10.213.128.103:10095
+		</a></td>
+        <td class="uat"></td>
+        <td class="stage">stage</td>
+        <td class="ios">ios</td>
+
+    </tr>       
+	<tr class="success">
+        <td>pointmall</td>
+		<td class="prod">10.214.96.59:10094<br/>10.214.96.64:10094<br/>10.214.96.202:10094(在用）<br/>10.214.96.204:10094<br/>10.214.96.201:10094<br/>10.214.96.203:10094</td>
+        <td class="dev"><a href="http://10.19.212.123:10094/swagger-ui.html" target="_blank">
+		10.19.212.123:10094
+		</a></td>
+        <td class="test"><a href="http://10.213.129.57:10094/swagger-ui.html" target="_blank">
+		10.213.129.57:10094
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.103:10094/swagger-ui.html" target="_blank">
+		10.213.128.103:10094
+		</a></td>
+        <td class="uat">10.213.130.89:10094<br/>10.213.130.88:10094</td>
+        <td class="stage"><a href="http://10.214.160.245:10094/swagger-ui.html" target="_blank">
+		10.214.160.245:10094
+		<a/></td>
+        <td class="ios">ios</td>
+
+    </tr>
+	<tr class="success">
+        <td>reserve</td>
+		<td class="prod">10.214.96.59:10097<br/>10.214.96.64:10097<br/>10.214.96.202:10097<br/>10.214.96.204:10097<br/>10.214.96.201:10097<br/>10.214.96.203:10097</td>
+        <td class="dev"><a href="http://10.19.212.123:10097/swagger-ui.html" target="_blank">
+		10.19.212.123:10097
+		</a></td>
+        <td class="test"><a href="http://10.213.129.57:10097/swagger-ui.html" target="_blank">
+		10.213.129.57:10097
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.102:10097/swagger-ui.html" target="_blank">
+		10.213.128.102:10097
+		</a></td>
+        <td class="uat">10.213.130.89:10097<br/>10.213.130.88:10097</td>
+        <td class="stage"><a href="http://10.214.160.245:10097/swagger-ui.html" target="_blank">
+		10.214.160.245:10097
+		<a/></td>
+        <td class="ios">ios</td>
+
+    </tr>
+	<tr class="active">
+        <td>admin</td>
+		<td>prod</td>
+        <td class="dev">10.199.212.123:10085</td>
+        <td>test</td>
+        <td>test2</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+
+    </tr>	
+	<tr class="active">
+        <td>MessagePush</td>
+		<td>litao132@10.214.96.51
+		  <br/>/home/tmp_user/logs</td>
+        <td class="dev"></td>
+        <td class="test">10.213.129.57</td>
+        <td class="test2">10.213.128.102</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+
+    </tr>
+	  <tr class="warning">
+        <td>configconsole</td>
+	    <td class="prod">10.214.129.199:2020</td>mq
+        <td class="dev">dev</td>
+        <td>test</td>
+        <td>test2</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+    </tr>
+    <tr class="danger">
+        <td>configserver</td>
+		<td class="prod">10.214.129.197/198:2020</td>
+        <td class="dev">dev</td>
+        <td>test</td>
+        <td>test2</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+    </tr>
+    <tr class="warning">
+        <td>hystrix-turbine</td>
+		<td>prod</td>
+        <td class="dev">dev</td>
+        <td>test</td>
+        <td>test2</td>
+        <td class="uat">uat</td>
+        <td>stage</td>
+        <td>ios</td>
+    </tr>
+    <tr class="active">
+        <td>social-web</td>
+		<td class="prod">10.214.96.59/64:10080</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.57:10080/swagger-ui.html" target="_blank">
+		10.213.129.57:10080
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.102:10080/swagger-ui.html" target="_blank">
+		10.213.128.102:10080
+		</a></td>
+        <td class="uat">10.213.129.155:10084<br/>10.213.129.132:10084</td>
+        <td class="stage">10.214.160.245:10080</td>
+		<td>ios</td>
+
+    </tr>
+    <tr class="warning">
+        <td>social-callback</td>
+		<td class="prod">10.214.129.197/198:10081</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.57:10081/swagger-ui.html" target="_blank">
+		10.213.129.57:10081
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.103:10081/swagger-ui.html" target="_blank">
+		10.213.128.103:10081
+		</a></td>        
+		<td class="uat">10.213.129.155:10081<br/>10.213.129.132:10081</td>
+        <td class="stage">10.214.160.245:10081</td>
+		<td>ios</td>
+    </tr>
+    <tr class="danger">
+        <td>social-job</td>
+		<td class="prod">10.214.96.59/64:10088</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.60:10088/swagger-ui.html" target="_blank">
+		10.213.129.60:10088
+		</a></td>        
+		<td class="test2"><a href="http://10.213.128.102:10088/swagger-ui.html" target="_blank">
+		 10.213.128.102:10088
+		</a></td>
+        <td class="uat">10.213.129.132:10088<br/>10.213.129.155:10088</td>
+        <td class="stage">10.214.160.245:10088</td>
+		<td>ios</td>
+    </tr>    
+	<tr class="danger">
+        <td>social-mq</td>
+		<td class="prod">10.214.96.59/64:10086</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.60:10086/swagger-ui.html" target="_blank">
+		10.213.129.60:10086
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.102:10086/swagger-ui.html" target="_blank">
+		10.213.128.102:10086</a></td>
+        <td class="uat">10.213.129.155:10086<br/>10.213.129.132:10086</td>
+        <td class="stage">10.214.160.245:10086</td>
+		<td>ios</td>
+    </tr>
+    <tr class="success">
+        <td>share-web</td>
+		<td class="prod">10.214.129.197/198:10084</td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.60:10084/swagger-ui.html" target="_blank">
+		10.213.129.60:10084
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.104:10084/swagger-ui.html" target="_blank">
+		10.213.128.104:10084</a></td>
+        <td class="uat">10.213.129.155:10084<br/>10.213.129.132:10084</td>
+        <td class="stage">10.214.160.245:10084</td>
+        <td class="ios">ios</td>
+
+    </tr>    
+	<tr class="success">
+        <td>timer-inrpc</td>
+		<td class="prod"><a href="http://10.213.129.58:12002/timer-inrpc/" target="_blank">
+		prod<a/></td>
+        <td class="dev">dev</td>
+        <td class="test"><a href="http://10.213.129.59/timer-inrpc" target="_blank">
+		test
+		</a></td>
+        <td class="test2"></td>
+        <td class="uat"></td>
+        <td class="stage"></td>
+        <td class="ios">ios</td>
+
+    </tr>
+    <tr class="success">
+        <td>eureka</td>
+		<td class="prod"><a href="http://10.214.129.200:10083/" target="_blank">
+		10.214.129.200~202:10083
+		</a></td>
+        <td class="dev"><a href="http://10.199.212.123:10083/" target="_blank">
+		10.199.212.123:10083
+		</a></td>
+        <td class="test"><a href="http://10.213.129.60:10083/" target="_blank">
+		10.213.129.60:10083
+		</a></td>
+        <td class="test2"><a href="http://10.213.128.103:10083/" target="_blank">
+		10.213.128.103/104:10083
+		</a></td>
+        <td class="uat">10.213.54.165:10083<br/>10.213.54.171:10083</td>
+        <td class="stage"><a href="http://10.214.160.245:10083/" target="_blank">
+		10.214.160.245:10083
+		</a></td>
+        <td class="ios">ios</td>
+
+    </tr>
+    <tr class="danger">
+        <td>zuul</td>
+		<td class="prod">10.214.129.200/201/202:10082<br/>
+10.214.129.110/111/122:10082</td>
+        <td class="dev">10.199.212.123:10082</td>
+        <td class="test"><a href="http://10.213.129.60:10082/swagger-ui.html" target="_blank">
+		10.213.129.57/60:10082
+		</a></td>
+        <td class="test2">10.213.129.57/60:10082</td>
+        <td class="uat">10.213.54.171:10082<br/>10.213.54.165:10082</td>
+        <td class="stage">10.214.160.245:10082</td>
+        <td>ios</td>
+    </tr>
+    <tr class="">
+        <td>服务器列表</td>
+		<td class="prod">10.214.129.110/111/122<br/>10.214.129.197/198/199<br/>10.214.129.200/201/202<br/>10.214.96.59/64</td>
+        <td class="dev">10.199.212.123<br/>10.199.212.124<br/>10.199.212.125<br/>10.199.212.126</td>
+        <td class="test">10.213.129.57<br/>10.213.129.58<br/>10.213.129.59<br/>10.213.129.60<br/>10.213.129.98</td>
+        <td class="test2">10.213.128.100<br/>10.213.128.101<br/>10.213.128.102<br/>10.213.128.103(jar)<br/>10.213.128.104(jar)<br/></td>
+        <td class="uat">10.213.130.90<br/>10.213.33.197<br/>10.213.33.199<br/>10.213.54.165<br/>10.213.54.171</td>
+        <td class="stage">10.214.160.178<br/>10.214.160.179<br/>10.214.160.180<br/>10.214.160.181<br/>10.214.160.245<br/></td>
+        <td>ios</td>
+    </tr>
+   <tr class="">
+        <td>数据库列表</td>
+		<td class="prod">10.214.129.133:3306<br/>10.214.129.223/10.214.129.227</td>
+        <td class="dev">10.199.212.126:3306</td>
+        <td class="test">10.213.128.98:13306</td>
+        <td class="test2">10.213.128.109:3306<br/>10.213.128.100:13307</td>
+        <td class="uat">10.213.54.249:3306</td>
+        <td class="stage">10.214.160.188:3306</td>
+        <td class="ios">10.214.129.209:3306</td>
+    </tr> 	   
+	<tr class="">
+        <td>flink</td>
+		<td class="prod">10.214.96.63</td>
+        <td class="dev">10.199.212.124</td>
+        <td class="test"><a href="http://10.213.128.97:8081/#/overview" target="_blank">10.213.128.97</a></td>
+        <td class="test2">10.213.128.105</td>
+        <td class="uat">10.213.54.141</td>
+        <td class="stage"><a href="http://10.214.160.180:10211" target="_blank">10.214.160.180</a></td>
+        <td class="ios">10.214.129.230</td>
+    </tr> 
+	<tr class="">
+        <td>kafka</td>
+		<td class="prod">10.214.129.40:9092<br/>10.214.129.41:9092<br/>10.214.129.55:9092<br/>10.214.129.70:9092<br/>10.214.129.85:9092</td>
+        <td class="dev">10.199.212.123:9092<br/>10.199.212.124:9092<br/>10.199.212.125:9092</td>
+        <td class="test">10.213.129.58:9092<br/>10.213.129.59:9092<br/>10.213.129.60:9092<br/>/opt/kafka</td>
+        <td class="test2">10.213.128.101:10092<br/>10.213.128.102:10092<br/>10.213.128.103:10092<br/>/home/sharuser/kafka_2.11-0.9.0.1</td>
+        <td class="uat">10.213.130.90:9092<br/>10.213.33.197:9092<br/>10.213.33.199:9092</td>
+        <td class="stage">10.214.160.178:9092<br/>10.214.160.179:9092<br/>10.214.160.180:9092</td>
+        <td class="ios"></td>
+    </tr> 			
+	<tr class="">
+        <td>zookeeper</td>
+		<td class="prod">10.214.129.40:2181<br/>10.214.129.41:2181<br/>10.214.129.55:2181<br/>10.214.129.70:2181<br/>10.214.129.85:2181</td>
+        <td class="dev">10.199.212.123:2181<br/>10.199.212.124:2181<br/>10.199.212.125:2181</td>
+        <td class="test">10.213.129.58:2181<br/>10.213.129.59:2181<br/>10.213.129.60:2181</td>
+        <td class="test2">10.213.128.101:12181<br/>10.213.128.102:12181<br/>10.213.128.103:12181</td>
+        <td class="uat">10.213.130.90:2181<br/>10.213.33.197:2181<br/>10.213.33.199:2181</td>
+        <td class="stage">10.214.160.178:2181<br/>10.214.160.179:2181<br/>10.214.160.180:2181</td>
+        <td class="ios"></td>
+    </tr> 		
+	<tr class="">
+        <td>ignite</td>
+		<td class="prod"></td>
+        <td class="dev">10.199.212.124:10475/10485<br/>10.199.212.125:10475/10485<br/>0.199.212.126:10475/10485</td>
+        <td class="test">10.213.128.98:10475/10485</td>
+        <td class="test2">10.213.128.105:10475/10485<br/>10.213.128.106:10475/10485<br/>10.213.128.109:10475/10485</td>
+        <td class="uat">10.213.130.90:10475/10485<br/>10.213.33.197:10475/10485<br/>10.213.33.199:10475/10485</td>
+        <td class="stage">172.19.1.14:10475</td>
+        <td class="ios"></td>
+    </tr> 	
+	<tr class="">
+        <td>nginx转发</td>
+		<td class="prod">http://szqy.ffan.com/</td>
+        <td class="dev">http://10.199.212.123/</td>
+        <td class="test">http://szqy.ffan.com/test/<br/>http://10.213.129.59/
+		</td>
+        <td class="test2">http://szqy.ffan.com/test2/test2/<br/>http://10.213.128.100:8000/</td>
+        <td class="uat">http://szqy.ffan.com/test2/uat/<br/>http://10.214.160.180/uat/</td>
+        <td class="stage">http://45.122.0.68/<br/>http://szqy.ffan.com/test2/<br/>http://10.214.160.180/</td>
+        <td class="ios">http://szqy.ffam.com/ios/</td>
+    </tr>
+    <tr class="danger">
+        <td>ssh方式-日志</td>
+		<td class="prod">ssh litao132@host  -p lita132</td>
+        <td class="dev">exchange/ffan.exchange</td>
+        <td class="test">10022 exchange/dams123</td>
+        <td class="test2">ssh readlog@host  -p readlog</td>
+        <td class="uat">ssh readlog@host  -p readlog</td>
+        <td class="stage">ssh readlog@host  -p readlog</td>
+        <td class="ios">ssh litao132@host  -p litao132</td>
+    </tr>
+	<tr class="">
+        <td>日志目录</td>
+		<td class="prod" colspan=7>/app/data/logs/jar;/app/data/logs/{project.id};
+		 /app/data/logs/exchange/{project.id};/app/data/logs/tomcat/catalina.{project.port}</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
